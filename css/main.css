@@ -377,7 +377,44 @@ p.contactinfo {
     }
     
     .downloadCV {
-        font-size: 1.5em;
+        font-size: 2.5em;
         padding: 0.5em 2em
+    }
+    
+    .sectionHeader h3 {
+        font-size: 5em;
+    }
+    
+    .sectionText p {
+        font-size: 2.5em;
+    }
+    
+    #icons img {
+        height:120px;
+        width: 120px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    
+    span.skill {
+        padding: 1em;
+        border-radius: 20px;
+        font-size: 2em;
+    }
+    
+    .contactInfo h4 {
+        font-size: 4em;
+    }
+    
+    .contactInfo p {
+        font-size: 3em
+    }
+    
+    .contactInfo div {
+        max-height: 100%;
+    }
+    
+    a:link {
+        font-size: 3em
     }
 }
