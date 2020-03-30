@@ -332,9 +332,13 @@ p.contactinfo {
         margin: auto;
         max-width: 100%;
     }
+    
+    h2 {
+        font-size: 3.5em;
+    }
 
     .headerMainText h1 {
-        font-size: 5em;
+        font-size: 6em;
         color: white;
     }
 
