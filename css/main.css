@@ -3,25 +3,25 @@ h2 {
 }
 
 body {
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
 }
 
 .downloadCV {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1.2em;
-    background-color:rgba(0, 0, 0, 0);
-    padding:0.4em 1.4em;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.4em 1.4em;
     border-radius: 40px;
     border: 1px solid #FD6585;
-    color:#FD6585;
+    color: #FD6585;
     margin-top: 20px;
 }
 
 .downloadCV:hover {
-    background-color:#FD6585;
-    color:white;
+    background-color: #FD6585;
+    color: white;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -53,7 +53,7 @@ h2 {
 }
 
 .sectionText p {
-    color:#FD6585;
+    color: #FD6585;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -62,7 +62,7 @@ h2 {
 }
 
 .languagesSubText p {
-    color:#FD6585;
+    color: #FD6585;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -165,18 +165,18 @@ li.nav a {
 
 .tooltiptext {
     visibility: hidden;
-  width: 120px;
-  background-color: white;
+    width: 120px;
+    background-color: white;
     margin-top: 10px;
-  color: #000;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
 }
@@ -225,12 +225,12 @@ section {
 .projectText {
     max-width: 50%;
     line-height: 1.5em;
-    color:white;
+    color: white;
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1.5em;
-    margin:20px auto 10px auto;
+    margin: 20px auto 10px auto;
 }
 
 .projectButtons {
@@ -253,8 +253,8 @@ span.skill {
 }
 
 section#contact {
-    background:white;
-    height:500px;
+    background: white;
+    height: 500px;
 }
 
 .flexContainer {
@@ -262,7 +262,7 @@ section#contact {
 }
 
 .contactSection1 {
-    width:50%;   
+    width: 50%;
 }
 
 .contactSection2 {
@@ -270,10 +270,11 @@ section#contact {
 }
 
 .googlemap {
-        position: relative;
-        padding-bottom: 75%; /* 4:3 ratio*/
-        height: 0;
-        overflow: hidden;
+    position: relative;
+    padding-bottom: 75%;
+    /* 4:3 ratio*/
+    height: 0;
+    overflow: hidden;
 }
 
 .googlemap iframe {
@@ -291,10 +292,10 @@ section#contact {
 }
 
 .contactInfo {
-  height:500px;
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contactInfo h4 {
@@ -311,7 +312,7 @@ section#contact {
     font-weight: 300;
     font-size: 1.6em;
     color: #000;
-        margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 a:link {
@@ -324,4 +325,55 @@ a:link {
 
 p.contactinfo {
     margin-top: 40px;
+}
+
+@media (max-width:1100px) {
+    .headerMainText {
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .headerMainText h1 {
+        font-size: 5em;
+        color: white;
+    }
+
+    .container {
+        max-width: 80%
+    }
+
+    .projectImage {
+        max-width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .projectImage img {
+        max-width: 100%;
+    }
+
+    .projectText {
+        max-width: 100%;
+    }
+
+    .projectButtons {
+        max-width: none;
+    }
+    
+    .flexContainer {
+    display: inline;
+}
+    
+    .contactSection1 {
+        width: 100%;
+    }
+    
+    .contactSection2 {
+        width: 100%;
+    }
+    
+    .downloadCV {
+        font-size: 1.5em;
+        padding: 0.5em 2em
+    }
 }
