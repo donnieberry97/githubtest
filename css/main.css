@@ -5,6 +5,7 @@ h2 {
 body {
     background-color: #000000;
     background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+    position: relative;
 }
 
 .downloadCV {
@@ -86,6 +87,9 @@ span.boldMainColor {
     max-width: 80%;
     margin: 0 auto;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
 }
 
 .container {
@@ -103,22 +107,17 @@ span.boldMainColor {
     color: white;
 }
 
-nav {
-    width: 100%;
-    padding: 1em 0em;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-}
+
+
 
 ul.nav {
     list-style: none;
+    display: flex;
+    width: 20%;
+    justify-content: space-around
 }
 
 li.nav {
-    display: inline-block;
-    position: relative;
-    margin-right: 50px;
 }
 
 li.nav a {
@@ -129,20 +128,12 @@ li.nav a {
     font-size: 1.3em
 }
 
-.box1 {
-    width: 50%;
-}
-
 .logo {
     content: url(../images/logo.png);
     height: 80px;
 }
 
-.box2 {
-    width: 50%;
-    text-align: right;
-    margin: auto;
-}
+
 
 .header {
     padding: 30em 0em;
@@ -327,11 +318,72 @@ p.contactinfo {
     margin-top: 40px;
 }
 
-@media (max-width:1100px) {
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color:white;
+    margin: 3px;
+}
+
+.burger {
+    display: none;
+}
+
+    .nav-active {
+        transform: translateX(0%) !important;
+        opacity: 1;
+    }
+
+@media screen and (max-width:1100px) {
+    
+}
+
+@media screen and (max-width:1100px) {
+    
+    body {
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    ul.nav {
+        position: fixed;
+        z-index: 100;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+            background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: 0.3s all ease;
+    }
+    
+
+    
     
     * {
         line-height: 1.4em;
     }
+    
+    .burger {
+        display: block;
+        position: fixed;
+        right: 10%
+    }
+    
+    .burger:hover {
+        cursor: pointer;
+    }
+    
+    ul.nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around
+}
     
     p {
         font-size: 3em !important;
@@ -439,7 +491,8 @@ p.contactinfo {
     }
     
     .projectText p {
+        margin: 2em 0px;
         line-height: 1.6em;
-        font-size: 1.5em;
+        font-size: 1.5em !important
     }
 }
