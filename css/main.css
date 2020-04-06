@@ -81,9 +81,7 @@ span.boldMainColor {
     font-weight: 500;
 }
 
-
-
-.mainContainerFlex {
+.navContainerFlex {
     max-width: 80%;
     margin: 0 auto;
     display: flex;
@@ -91,6 +89,14 @@ span.boldMainColor {
     align-items: center;
     min-height: 8vh;
 }
+
+
+.mainContainerFlex {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
 
 .container {
     max-width: 50%;
@@ -394,7 +400,7 @@ p.contactinfo {
     }
     
     h2 {
-        font-size: 3.5em;
+        font-size: 2em;
     }
 
     .headerMainText h1 {
