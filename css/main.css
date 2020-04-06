@@ -92,10 +92,12 @@ span.boldMainColor {
 
 
 .mainContainerFlex {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     display: flex;
 }
+
+
 
 
 .container {
@@ -142,7 +144,7 @@ li.nav a {
 
 
 .header {
-    padding: 30em 0em;
+    padding: 20em 0em;
     width: 100%;
 }
 
@@ -378,7 +380,7 @@ p.contactinfo {
     .burger {
         display: block;
         position: fixed;
-        right: 10%
+        right: 5%
     }
     
     .burger:hover {
@@ -392,7 +394,7 @@ p.contactinfo {
 }
     
     p {
-        font-size: 3em !important;
+        font-size: 1em ;
     }
     .headerMainText {
         margin: auto;
@@ -404,7 +406,7 @@ p.contactinfo {
     }
 
     .headerMainText h1 {
-        font-size: 6em;
+        font-size: 4em;
         color: white;
     }
 
@@ -445,30 +447,30 @@ p.contactinfo {
     }
     
     .downloadCV {
-        font-size: 2.5em;
+        font-size: 1.6em;
         padding: 0.5em 2em
     }
     
     .sectionHeader h3 {
-        font-size: 5em;
+        font-size: 4em;
     }
     
     .sectionText p {
-        font-size: 2.5em;
-        margin: 1em 0em
+        font-size: 1.5em;
+        margin: 1em 0em 3em 0em;
     }
     
     #icons img {
-        height:120px;
-        width: 120px;
-        margin-bottom: 50px;
-        margin-top: 50px;
+        height:70px;
+        width: 70px;
+        margin-bottom: 20px;
+        margin-top: 0px;
     }
     
     span.skill {
-        padding: 1em;
-        border-radius: 20px;
-        font-size: 2em;
+        padding: 0.6em;
+        border-radius: 10px;
+        font-size: 1.2em;
         margin: 1em 0px;
     }
     
@@ -481,7 +483,7 @@ p.contactinfo {
     }
     
     .contactInfo p {
-        font-size: 3em
+        font-size: 1.5em
     }
     
     .contactInfo div {
@@ -489,7 +491,7 @@ p.contactinfo {
     }
     
     a:link {
-        font-size: 3em
+        font-size: 1.5em
     }
     
     section#contact {
@@ -499,6 +501,21 @@ p.contactinfo {
     .projectText p {
         margin: 2em 0px;
         line-height: 1.6em;
-        font-size: 1.5em !important
+        font-size: 1em 
     }
+    
+    
+    .header {
+    padding: 5em 0em;
+}
+    
+    section:last-of-type {
+        margin:0;
+    }
+    
+    .headerMainText {
+    max-width: 60%;
+    margin: auto;
+    text-align: center
+}
 }
