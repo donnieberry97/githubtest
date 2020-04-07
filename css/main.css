@@ -1,3 +1,44 @@
+.seperation-container {
+  position: relative;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  height: 10vh;
+}
+
+.wave {
+  position: absolute;
+  height: 89px;
+  width: 100%;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  bottom: 0;
+}
+
+.wave::before, .wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  width: 53.5%;
+  height: 110%;
+  background-color: #fff;
+  right: 0;
+  top: 60%;
+}
+.wave::after {
+  width: 53.5%;
+  height: 100%;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  left: 0px;
+  top: 40%;
+}
+
+
+
 h2 {
     line-height: 1.4em !important
 }
@@ -125,8 +166,7 @@ ul.nav {
     justify-content: space-around
 }
 
-li.nav {
-}
+li.nav {}
 
 li.nav a {
     text-decoration: none;
@@ -144,8 +184,10 @@ li.nav a {
 
 
 .header {
-    padding: 20em 0em;
+    height: 90vh;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #icons {
@@ -186,6 +228,15 @@ a.html {
 
 a.html:hover .tooltiptext {
     visibility: visible;
+}
+
+a.downloadCV {
+    text-decoration: none;
+    color: #FD6585;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    margin-top: 30px;
 }
 
 
@@ -235,7 +286,14 @@ section {
 .projectButtons {
     text-align: left;
     max-width: 50%;
+    
     margin: auto;
+    margin-top: 30px;
+}
+
+a.downloadCV {
+    font-size: 1.2em ;
+    font-weight: 300 
 }
 
 span.skill {
@@ -314,7 +372,7 @@ section#contact {
     margin-bottom: 50px;
 }
 
-a:link {
+a.email:link {
     text-decoration: none;
     color: #FD6585;
     font-family: 'Roboto', sans-serif;
@@ -330,7 +388,7 @@ p.contactinfo {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color:white;
+    background-color: white;
     margin: 3px;
 }
 
@@ -338,30 +396,31 @@ p.contactinfo {
     display: none;
 }
 
-    .nav-active {
-        transform: translateX(0%) !important;
-        opacity: 1;
-    }
+.nav-active {
+    transform: translateX(0%) !important;
+    opacity: 1;
+}
 
-@media screen and (max-width:768px) {
-    
+
+section:last-of-type {
+    margin: 0;
 }
 
 @media screen and (max-width:768px) {
-    
+
     body {
         overflow-x: hidden;
         position: relative;
     }
-    
+
     ul.nav {
         position: fixed;
         z-index: 100;
         right: 0px;
         height: 92vh;
         top: 8vh;
-            background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+        background-color: #000000;
+        background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -369,38 +428,39 @@ p.contactinfo {
         transform: translateX(100%);
         transition: 0.3s all ease;
     }
-    
 
-    
-    
+
+
+
     * {
         line-height: 1.4em;
     }
-    
+
     .burger {
         display: block;
         position: fixed;
         right: 5%
     }
-    
+
     .burger:hover {
         cursor: pointer;
     }
-    
+
     ul.nav {
-    list-style: none;
-    display: flex;
-    justify-content: space-around
-}
-    
-    p {
-        font-size: 1em ;
+        list-style: none;
+        display: flex;
+        justify-content: space-around
     }
+
+    p {
+        font-size: 1em;
+    }
+
     .headerMainText {
         margin: auto;
         max-width: 100%;
     }
-    
+
     h2 {
         font-size: 2em;
     }
@@ -433,88 +493,85 @@ p.contactinfo {
         max-width: none;
         text-align: center;
     }
-    
+
     .flexContainer {
-    display: inline;
-}
-    
+        display: inline;
+    }
+
     .contactSection1 {
         width: 100%;
     }
-    
+
     .contactSection2 {
         width: 100%;
     }
-    
+
     .downloadCV {
         font-size: 1.6em;
         padding: 0.5em 2em
     }
-    
+
     .sectionHeader h3 {
         font-size: 4em;
     }
-    
+
     .sectionText p {
         font-size: 1.5em;
         margin: 1em 0em 3em 0em;
     }
-    
+
     #icons img {
-        height:70px;
+        height: 70px;
         width: 70px;
         margin-bottom: 20px;
         margin-top: 0px;
     }
-    
+
     span.skill {
         padding: 0.6em;
         border-radius: 10px;
         font-size: 1.2em;
         margin: 1em 0px;
     }
-    
+
     .contactInfo {
         padding: 3em 0em;
     }
-    
+
     .contactInfo h4 {
         font-size: 4em;
     }
-    
+
     .contactInfo p {
         font-size: 1.5em
     }
-    
+
     .contactInfo div {
         max-height: 100%;
     }
-    
+
     a:link {
-        font-size: 1.5em
+        font-size: 1em
     }
-    
+
     section#contact {
-        height:auto;
+        height: auto;
     }
-    
+
     .projectText p {
         margin: 2em 0px;
         line-height: 1.6em;
-        font-size: 1em 
+        font-size: 1em
     }
-    
-    
+
+
     .header {
-    padding: 5em 0em;
-}
-    
-    section:last-of-type {
-        margin:0;
+        padding: 5em 0em;
     }
-    
+
+
     .headerMainText {
-    margin: auto;
-    text-align: center
-}
+        margin: auto;
+        text-align: center
+    }
 }
